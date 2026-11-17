@@ -1,0 +1,16 @@
+version: 1
+project:
+  title: HEP Computing Lab
+  description: Generate simulated LHC collisions and reconstruct a Z candidate with Python.
+  exclude:
+    - README.md
+  toc:
+    - file: index.md
+    - file: setup.md
+    - file: notebooks/01-terminal.ipynb
+    - file: notebooks/02-pythia.ipynb
+    - file: notebooks/03-spectra.ipynb
+    - file: notebooks/04-z-dimuon.ipynb
+site:
+  template: book-theme
+  title: HEP Computing Lab

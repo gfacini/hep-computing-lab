@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hep-computing-lab"
+version = "0.1.0"
+description = "An introductory collider physics computing course"
+requires-python = ">=3.12,<3.13"
+dependencies = ["pythia8mc==8.318.3", "matplotlib>=3.10,<4", "jupyterlab>=4.4,<5", "ipykernel>=6.29,<8"]
+
+[project.optional-dependencies]
+build = ["jupyter-book==2.1.7", "nbconvert>=7.16,<8", "pytest>=8,<10"]
+
+[tool.setuptools]
+packages = ["hep_lab"]
+package-dir = {"" = "src"}
